@@ -1,0 +1,201 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #ffffff;
+}
+
+#container {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(185, 255, 255);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align buttons to the right */
+    justify-content: center; /* Center buttons vertically */
+    padding-right: 10px; /* Reduce padding to bring buttons closer to the images */
+}
+
+#container > input[type="button"] {
+    margin: 5px 0; /* Adjust spacing between buttons */
+}
+
+#background {
+    position: relative;
+    width: 80%;
+    height: 70%;
+    background-color: #888cfc;
+    background-image: url("https://64.media.tumblr.com/c44f11f8595aa4c5f689e4301cbc272d/1172a51b22131685-4c/s100x200/d30043e9c405352c3c1582450aa6350ec70f9cd2.gifv");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 20px;
+}
+
+
+#container {
+    flex-grow: 1;
+}
+
+#background {
+    flex-shrink: 0;
+}
+
+
+#hairback, #man, #shoes, #clothes, #hairfront, #makeup {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.hairback {
+    background-image: url("../img/hairback.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#man {
+    background-image: url("https://64.media.tumblr.com/5e4fe5c8c53e704951bb773da43c87d0/eb15c9bf2472dad3-9e/s2048x3072/a155ceca0808449caf63861441111c595fc65d2b.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dress1 {
+    background-image: url("https://64.media.tumblr.com/c86af55cf3f07a8fafa67879e3f634b1/eb15c9bf2472dad3-f4/s2048x3072/c7f479ed0438bbc085754f9cbf0dfbd832d3d272.png");
+}
+.dress2 {
+    background-image: url("https://64.media.tumblr.com/4f0e1d468c5956bb6b9a3c52cadeb2d8/eb15c9bf2472dad3-d3/s2048x3072/ee3465067faf17c90f9a182b27671b70fb2a2f4e.png");
+}
+.dress3 {
+    background-image: url("https://64.media.tumblr.com/15636357b072de727546207ea8615eae/eb15c9bf2472dad3-aa/s2048x3072/0839ffb45b09442810e733628a68790242fda976.png");
+}
+.dress4 {
+    background-image: url("https://64.media.tumblr.com/d7dd69a10a5aa8f0b07e6d4f80c13101/eb15c9bf2472dad3-3f/s2048x3072/0666198ee0776db85e6f53412766df5e83c76d39.png");
+}
+.dress5 {
+    background-image: url("https://64.media.tumblr.com/17bdc6dba8f432243d9850884c4afce2/9d5fbcd358af6d26-28/s500x750/b34242c68a4a63afc85ab65066b760547936aa80.pnj");
+}
+.dress6 {
+    background-image: url("https://64.media.tumblr.com/f9975239741ca2a7a0a96ff1a557f035/9d5fbcd358af6d26-8d/s500x750/7dd135c54f3228897d76f64daa9d4732a0503027.pnj");
+}
+
+.shoe1 {
+    background-image: url("https://64.media.tumblr.com/52d60575b8050ee80ffd9e80c66c0e19/eb15c9bf2472dad3-ed/s2048x3072/38447d92fcd19632092280083fc561d7bc8a43d3.png");
+}
+.shoe2 {
+    background-image: url("https://64.media.tumblr.com/7dc3a995e218c922e000af86b49691b3/eb15c9bf2472dad3-93/s2048x3072/775a740872642ed5a0cb67b546d3e7d3e2323206.png");
+}
+.shoe3 {
+    background-image: url("https://64.media.tumblr.com/a796fb781f0649c873c97affa41dd7a4/eb15c9bf2472dad3-e1/s2048x3072/09890b57d2bccecaae72075d7fd3154059c8d3ba.png");
+}
+.shoe4 {
+    background-image: url("https://64.media.tumblr.com/cc9ffea4090a7ccb53c39811191c3ef1/eb15c9bf2472dad3-4b/s1280x1920/768a66478f8257f693a8bf3e22976b5316e845f4.png");
+}
+.shoe5 {
+    background-image: url("https://64.media.tumblr.com/67e08a8ef18d355e78335b992ced50b1/9d5fbcd358af6d26-a2/s500x750/bacc189c378498fc718ce59c890abd238d7d8b05.pnj");
+}
+.shoe6 {
+    background-image: url("https://64.media.tumblr.com/ae8b1cc27797f289f223cdbaa555da92/9d5fbcd358af6d26-e2/s500x750/2044f55405ab9fe68582f9ca2e8ab5a69ee4055b.pnj");
+}
+
+.hairfront1 {
+    background-image: url("https://64.media.tumblr.com/c15afb9114541156c3ac0c924e91b52d/eb15c9bf2472dad3-50/s1280x1920/c0a4b9cbfa71aa5cb8f0d8d6b5a6efbd2ad0c240.png");
+}
+.hairfront2 {
+    background-image: url("https://64.media.tumblr.com/9440bf2d168d9af6d7dab1bb2e4c9668/eb15c9bf2472dad3-8c/s1280x1920/23935367d60cfcf83d166b42b00464113c9a8d85.png");
+}
+.hairfront3 {
+    background-image: url("https://64.media.tumblr.com/d393dd4345aa37482bd143ea6ea3a17f/eb15c9bf2472dad3-9b/s2048x3072/3d2543466814a8df661b228a7a895894acd972cc.png");
+}
+.hairfront4 {
+    background-image: url("https://64.media.tumblr.com/8ce574651cf83c506c0e215bdffaee49/eb15c9bf2472dad3-6f/s2048x3072/ffbf84ad4e1ba172a13bb15e5b82b46706ce953b.png");
+}
+
+#makeup {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.makeup1 {
+    background-image: url("https://64.media.tumblr.com/d152cf24e4aa5badc14ee289927d9683/3fa3c10aef1ce511-81/s1280x1920/436b1a8382189db17d37eb3157ff941e21205437.pnj");
+}
+.makeup2 {
+    background-image: url("https://64.media.tumblr.com/41678fb540bf3340d579ce57450b7ec0/3fa3c10aef1ce511-44/s500x750/d4cf0ffa2af37ee72ab9e47577c966087483532f.pnj");
+}
+.makeup3 {
+    background-image: url("https://64.media.tumblr.com/c4aeca9c196651ace80a67b8a517a4ef/3fa3c10aef1ce511-4e/s500x750/cb2280d2d358ff84c568279090cc5bc9fd493df7.pnj");
+}
+.makeup4 {
+    background-image: url("https://64.media.tumblr.com/993c58ca1e1fa78b261436180ac00f5d/3fa3c10aef1ce511-71/s500x750/96786e20d395af4548f6742f2c8718c4ec9beab5.pnj");
+}
+.makeup5 {
+    background-image: url("https://64.media.tumblr.com/0fde62e4e7978abd1aabaa4a42ddb793/3fa3c10aef1ce511-bf/s500x750/e10c210cd57be27521a92bd5384cfbb8c65168d0.pnj");
+}
+.makeup6 {
+    background-image: url("https://64.media.tumblr.com/7fcd9e7488614c65a6e0900355b4d90f/3fa3c10aef1ce511-ad/s500x750/84be984a248656a649c22722c918bfa9ff1c938b.pnj");
+}
+.makeup7 {
+    background-image: url("https://64.media.tumblr.com/dacab68c75767835053c643548272f2a/3fa3c10aef1ce511-48/s500x750/594b3b3d892bc0b95060b51238352078c37a459d.pnj");
+}
+
+.makeup1, .makeup2, .makeup3, .makeup4, .makeup5, .makeup6, .makeup7,
+.dress1, .dress2, .dress3, .dress4, .dress5, .dress6,
+.shoe1, .shoe2, .shoe3, .shoe4, .shoe5, .shoe6,
+.hairfront1, .hairfront2, .hairfront3, .hairfront4 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input[type="button"] {
+    font-size: 14px;
+    padding: 8px 16px;
+    position: left;
+    border-radius: 20px;
+    background-color: #888cfc;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    margin: 5px;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: #542d8e;
+}
+
+@media (max-width: 600px) {
+    #background {
+        width: 90%;
+        height: 60%;
+    }
+
+    input[type="button"] {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
